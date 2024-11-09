@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6 col-lg-4">
+      <div class="card mt-5">
+        <div class="card-body">
+          <h2 class="card-title text-center mb-4">Register</h2>
+          <form [formGroup]="registerForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" formControlName="name" id="name" placeholder="Enter your name">
+            </div><br>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" formControlName="email" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div><br>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" formControlName="password" id="password" placeholder="Password">
+            </div><br>
+            <div class="form-group">
+              <label for="confirmPassword">Confirm Password</label>
+              <input type="password" class="form-control" formControlName="confirmPassword" id="confirmPassword" placeholder="Confirm Password">
+            </div><br>
+            <div class="form-group">
+              <label for="dob">Date of Birth</label>
+              <input type="date" class="form-control" formControlName="dob" id="dob" placeholder="Enter your date of birth">
+            </div><br>
+            <button type="submit" (click)="Submit()" class="btn btn-primary btn-block">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
